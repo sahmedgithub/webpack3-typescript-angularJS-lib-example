@@ -1,0 +1,33 @@
+{
+  "name": "webpack3-typescript-lib-example",
+  "version": "1.0.0",
+  "description": "Example of TypeScript library using webpack3, karma, and istanbul coverage",
+  "main": "index.js",
+  "repository": "https://github.com/sahmedgithub/webpack3-typescript-lib-example",
+  "author": "Shabbir Ahmed",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm install && tsc && tsc -m es6 --outDir lib-esm && webpack",
+    "test": "npm run karma && npm run ts-coverage-remap",
+    "karma": "karma start",
+    "ts-coverage-remap": "remap-istanbul -i coverage/json/coverage-final.json -o coverage/html-ts -t html"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "angular": "^1.6.6",
+    "istanbul-instrumenter-loader": "^3.0.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-source-map-support": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.4",
+    "remap-istanbul": "^0.9.5",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "typings": "^2.1.1",
+    "webpack": "^3.6.0"
+  }
+}
