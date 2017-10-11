@@ -21,6 +21,7 @@
   "compileOnSave": false,
   "buildOnSave": false,
   "angularCompilerOptions": {
+    "genDir": "dist/aot",
     "skipMetadataEmit" : true
   }
 }
