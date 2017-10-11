@@ -2,5 +2,3 @@ coverage
 dist
 lib
 node_modules
-src/Greeter.ngsummary.json
-src/index.ngsummary.json
