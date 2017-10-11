@@ -19,5 +19,8 @@
     "./src/index.ts"
   ],
   "compileOnSave": false,
-  "buildOnSave": false
+  "buildOnSave": false,
+  "angularCompilerOptions": {
+    "skipMetadataEmit" : true
+  }
 }
